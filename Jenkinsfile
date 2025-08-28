@@ -23,7 +23,7 @@ pipeline {
                 dir("${ANSIBLE_DIR}") {
                     sh """
 		        sudo su ansible
-                        ansible-playbook -i host.yaml site.yml
+                        ansible-playbook -i host.yaml site.yaml
                     """
                 }
             }
