@@ -7,7 +7,7 @@ variable "key_name" {
 variable "private_key_path" {
   description = "Path to the private key file for Ansible SSH access"
   type        = string
-  default     = "/var/lib/jenkins/.ssh/new.pem"
+  default     = "/var/lib/jenkins/ansible/new.pem"
 }
 
 variable "aws_region" {

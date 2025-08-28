@@ -59,6 +59,7 @@ resource "null_resource" "ansible_inventory" {
 
   provisioner "local-exec" {
     command = <<EOT
+rm -f /var/lib/jenkins/ansible/host.yaml
 cat > /var/lib/jenkins/ansible/host.yaml <<EOF
 all:
   children:
