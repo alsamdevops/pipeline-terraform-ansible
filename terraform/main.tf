@@ -59,8 +59,7 @@ resource "null_resource" "ansible_inventory" {
 
   provisioner "local-exec" {
     command = <<EOT
-mkdir -p /var/lib/jenkins/testing/ci-pipeline-infra/ansible
-cat > /var/lib/jenkins/testing/ci-pipeline-infra/ansible/host.yaml <<EOF
+cat > /var/lib/jenkins/aslam/pipeline-terraform-ansible/ansible/host.yaml <<EOF
 all:
   children:
     frontend:
