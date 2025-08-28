@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         TF_DIR = "terraform"
-        ANSIBLE_DIR = "/var/lib/jenkins/ansible"
+        ANSIBLE_DIR = "ansible"
     }
 
     stages {
