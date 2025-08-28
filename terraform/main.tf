@@ -89,7 +89,7 @@ output "backend_ip" {
 }
 
 output "host_yaml_path" {
-  value = "/var/lib/jenkins/workspace/${JOB_NAME}/ansible/host.yaml"
+  value = "/var/lib/jenkins/ansible/host.yaml"
 
 }
 
